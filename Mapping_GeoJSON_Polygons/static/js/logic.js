@@ -70,27 +70,28 @@ let baseMaps = {
 let map = L.map('mapid', {
   center: [43.7, -79.3],
   zoom: 11,
-  layers: [satelliteStreets]
+  layers: [streets]
 });
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
 // Accessing the airport GeoJSON URL
-let airportData = "https://raw.githubusercontent.com/dortegas/Mapping_Earthquakes/main/majorAirports.json";
+let torontoHoods = "https://raw.githubusercontent.com/dortegas/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
-d3.json(airportData).then(function(data) {
+d3.json(torontoHoods).then(function(data) {
   console.log(data);
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJSON(data, {
+    style: {
+      fillColor: "yellow",
+      weight: 1
+    },
     // We turn each feature into a marker on the map.
     onEachFeature: function(feature, layer) {
       return layer
-      .bindPopup("<h3>Airport code: " + feature.properties.faa + " <hr>Airport name: "+ feature.properties.name +"</h3>");
+      .bindPopup("<h3>Airport code: " + feature.properties.AREA_NAME + "</h3>");
     }
   }).addTo(map);
 });
-
-// Then we add our 'graymap' tile layer to the map.
-//streets.addTo(map);

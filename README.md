@@ -2,7 +2,9 @@
 
 ## Overview
 
-The project is about building insightful data visualizations with interactive features of earthquakes. The goal is to make a disaster reporting network creating earthquakes maps informative and easy to manipulate on desktop computers and mobile phones by using earthquake GeoJSON data from the US Geological Survey website, Javascript, D3, the Leaflet libraries, and the Mapbox API.
+The project is about building insightful data visualizations with interactive features of earthquakes. The goal is to make a disaster reporting network creating earthquakes maps informative and easy to manipulate on desktop computers and mobile phones by using earthquake GeoJSON data from the US Geological Survey website, Javascript, D3, the Leaflet libraries, and the Mapbox API. 
+
+The magnitude and localization of each earthquake are on a popup marker on maps, and the diameter and color of the marker reflect each earthquake's magnitude. The relationship between the location, frequency of seismic activity, and tectonic plates, is illustrated with fault lines on the maps.
 
 ## Resources
   - Language: JavaScript

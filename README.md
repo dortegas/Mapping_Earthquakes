@@ -2,9 +2,12 @@
 
 ## Overview
 
+The project is about building insightful data visualizations with interactive features of earthquakes. The goal is to make a disaster reporting network creating earthquakes maps informative and easy to manipulate on desktop computers and mobile phones by using earthquake GeoJSON data from the US Geological Survey website, Javascript, D3, the Leaflet libraries, and the Mapbox API.
+
 ## Resources
   - Language: JavaScript
-  - API: Leaflet 1.7.1 and MapBox
+  - API: MapBox
+  - Libraries: Leaflet 1.7.1
   - Development tool: VS Code and Google DevTools 
   - Web Design tools: HTML5, Bootstrap 3 and CSS
   - Data source GeoJSON format: PB2002_boundaries.json and 4.5_week.geojson

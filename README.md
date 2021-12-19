@@ -13,4 +13,4 @@
 
 1. Using JavaScript, Leaflet.js, and geoJSON data,  a tectonic plate data is added on the map using d3.json(), and the data using the geoJSON() layer. The tectonic plate LineString data is set on the map with the tectonic plate data to the overlay object with the earthquake data.
 
-<img src="Resources/earthquakes1.png" />
+<img src="Resources/earthquakes1.png" width="600" />

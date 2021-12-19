@@ -11,7 +11,7 @@ The magnitude and localization of each earthquake are on a popup marker on maps.
   - API: MapBox
   - Libraries: Leaflet 1.7.1
   - Development tool: VS Code and Google DevTools 
-  - Web Design tools: HTML5, Bootstrap 3 and CSS
+  - Web Design tools: HTML5 and CSS
   - Data source GeoJSON format: PB2002_boundaries.json and 4.5_week.geojson
 
 ## Results
